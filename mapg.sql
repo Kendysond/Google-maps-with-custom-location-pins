@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 27, 2016 at 09:11 AM
+-- Generation Time: Oct 01, 2016 at 09:27 AM
 -- Server version: 5.6.30
 -- PHP Version: 7.0.6
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `places` (
   `address` varchar(255) NOT NULL,
   `deleted` int(1) NOT NULL DEFAULT '0',
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `places`
@@ -51,7 +51,8 @@ INSERT INTO `places` (`place_id`, `name`, `long`, `lat`, `state`, `lga`, `type`,
 (6, 'Pretty Little Liars', '4.331917041601628', '7.4674049888128815', 'oyo', 'lga', 'hotel', '', 0, '2016-09-27 08:58:02'),
 (7, 'Kendyson Douglas', '4.320244067968815', '7.476936393371527', 'oyo', 'lga', 'hotel', '', 0, '2016-09-27 08:58:12'),
 (8, '', '4.642280811132878', '7.4013602770469165', 'oyo', 'club', 'hotel', '', 0, '2016-09-27 08:58:20'),
-(9, 'Pretty Little Liars', '4.745277637304753', '7.475574776883225', 'oyo', 'club', 'hotel', '', 0, '2016-09-27 08:58:28');
+(9, 'Pretty Little Liars', '4.745277637304753', '7.475574776883225', 'oyo', 'club', 'hotel', '', 0, '2016-09-27 08:58:28'),
+(10, 'Nike', '4.55233024960944', '7.491233109953767', 'Osun State', 'Atakunmosa West', 'Resorts', 'Nina Dobrev', 0, '2016-10-01 09:25:42');
 
 --
 -- Indexes for dumped tables
@@ -71,7 +72,7 @@ ALTER TABLE `places`
 -- AUTO_INCREMENT for table `places`
 --
 ALTER TABLE `places`
-  MODIFY `place_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `place_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

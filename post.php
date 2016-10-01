@@ -18,7 +18,7 @@
   $query =   "INSERT INTO `places` (`place_id`, `name`, `long`, `lat`, `type`, `address`, `state`, `lga`)
     VALUES (NULL, '".$_POST['name']."', '".$_POST['long']."', '".$_POST['lat']."', '".$_POST['type']."', '".$_POST['address']."', '".$_POST['state']."', '".$_POST['lga']."');";
   $result=  mysqli_query($conn,$query);
-    echo 'Added';
+    echo '<div class="alert alert-success" role="alert">Added</div>';
   }
 
   ?>
@@ -34,11 +34,12 @@
       </div>
       <div class="form-group">
           <label class="col-sm-2 control-label">Type:</label>
-
+          <!-- 1. Hotels, 2. Resorts, 3. Bars & Resturants -->
           <div class="col-sm-10">
             <select class="form-control" name="type">
-              <option value="hotel">Hotel</option>
-              <option value="club">Club</option>
+              <option value="Hotel">Hotel</option>
+              <option value="Resorts">Resorts</option>
+              <option value="Bars & Resturants">Bars & Resturants</option>
             </select>
           </div>
       </div>
@@ -54,8 +55,7 @@
 
           <div class="col-sm-10">
             <select class="form-control" name="state">
-              <option value="oyo">Oyo</option>
-              <option value="club">lagos</option>
+              <option value="Osun State">Osun State</option>
             </select>
           </div>
       </div>
@@ -63,10 +63,38 @@
           <label class="col-sm-2 control-label">LGA:</label>
 
           <div class="col-sm-10">
-            <select class="form-control" name="lga">
-              <option value="lga">LGA1</option>
-              <option value="club">Club</option>
-            </select>
+            <select required class="form-control" name="lga">
+                  <option parent="30" class="subc" value="Aiyedaade">Aiyedaade</option>
+                  <option parent="30" class="subc" value="Aiyedire">Aiyedire</option>
+                  <option parent="30" class="subc" value="Atakunmosa East">Atakunmosa East</option>
+                  <option parent="30" class="subc" value="Atakunmosa West">Atakunmosa West</option>
+                  <option parent="30" class="subc" value="Boluwaduro">Boluwaduro</option>
+                  <option parent="30" class="subc" value="Boripe">Boripe</option>
+                  <option parent="30" class="subc" value="Ede North">Ede North</option>
+                  <option parent="30" class="subc" value="Ede South">Ede South</option>
+                  <option parent="30" class="subc" value="Egbedore">Egbedore</option>
+                  <option parent="30" class="subc" value="Ejigbo">Ejigbo</option>
+                  <option parent="30" class="subc" value="Ife Central">Ife Central</option>
+                  <option parent="30" class="subc" value="Ife East">Ife East</option>
+                  <option parent="30" class="subc" value="Ife North">Ife North</option>
+                  <option parent="30" class="subc" value="Ife South">Ife South</option>
+                  <option parent="30" class="subc" value="Ifedayo">Ifedayo</option>
+                  <option parent="30" class="subc" value="Ifelodun">Ifelodun</option>
+                  <option parent="30" class="subc" value="Ila">Ila</option>
+                  <option parent="30" class="subc" value="Ilesa East">Ilesa East</option>
+                  <option parent="30" class="subc" value="Ilesa West">Ilesa West</option>
+                  <option parent="30" class="subc" value="Irepodun">Irepodun</option>
+                  <option parent="30" class="subc" value="Irewole">Irewole</option>
+                  <option parent="30" class="subc" value="Isokan">Isokan</option>
+                  <option parent="30" class="subc" value="Iwo">Iwo</option>
+                  <option parent="30" class="subc" value="Obokun">Obokun</option>
+                  <option parent="30" class="subc" value="Odo Otin">Odo Otin</option>
+                  <option parent="30" class="subc" value="Ola Oluwa">Ola Oluwa</option>
+                  <option parent="30" class="subc" value="Olorunda">Olorunda</option>
+                  <option parent="30" class="subc" value="Oriade">Oriade</option>
+                  <option parent="30" class="subc" value="Orolu">Orolu</option>
+                  <option parent="30" class="subc" value="Osogbo">Osogbo</option>
+              </select>
           </div>
       </div>
       <div class="form-group">

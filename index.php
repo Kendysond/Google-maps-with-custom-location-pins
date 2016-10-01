@@ -4,7 +4,7 @@
 <html>
 <head>
 
-  <title>Nice Maps</title>
+  <title>SPATIAL DISTRIBUTION OF BARS, RESTURANTS & HOTEL IN NIGERIA</title>
   <base href="http://localhost/mapg/">
   <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
   <script src="assets/jquery.min.js"></script>
@@ -12,7 +12,7 @@
   
 </head>
 <body>
-  <h2>Cool Maps</h2>
+  <h2>SPATIAL DISTRIBUTION OF BARS, RESTURANTS & HOTEL IN NIGERIA</h2>
   <!-- <div id="map" style="height: 80%; width:100%;"> -->
   <!-- <div id="gmap" style="with:300px;height:250px;"></div> -->
   <!-- <div id="controls"></div> -->
@@ -33,7 +33,7 @@ $(function() {
            echo "{
                 lat: ".$row["lat"].",
                 lon: ".$row["long"].",
-                title: '".$row["name"].' - '.$row["lga"]."',
+                title: '".$row["name"].' ('.$row["type"].') - '.$row["lga"]."',
                 html: '<h3>".$row["name"]."</h3> <p>Lga : ".$row["lga"]."</p><p>State : ".$row["state"]."</p>',
                 zoom: 14
              },";
