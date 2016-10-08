@@ -34,7 +34,7 @@ $(function() {
                 lat: ".$row["lat"].",
                 lon: ".$row["long"].",
                 title: '".$row["name"].' ('.$row["type"].') - '.$row["lga"]."',
-                html: '<h3>".$row["name"]."</h3> <p>Lga : ".$row["lga"]."</p><p>State : ".$row["state"]."</p>',
+                html: '<h3>".$row["name"]."</h3> <p>Lga : ".$row["lga"]."</p><p>State : ".$row["state"]."</p><p>Address : ".$row["address"]."',
                 zoom: 14
              },";
            }
